@@ -1,9 +1,11 @@
 {
   "canisters": {
     "AllChallenge_backend": {
-      "main": "src/AllChallenge_backend/main.mo",
+      "main": "src/AllChallenge_backend/Challenge_03.mo",
       "type": "motoko"
     },
+ 
+    
     "AllChallenge_frontend": {
       "dependencies": [
         "AllChallenge_backend"
