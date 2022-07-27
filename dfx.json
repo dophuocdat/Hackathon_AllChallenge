@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "AllChallenge_backend": {
+      "main": "src/AllChallenge_backend/main.mo",
+      "type": "motoko"
+    },
+    "AllChallenge_frontend": {
+      "dependencies": [
+        "AllChallenge_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/AllChallenge_frontend/src/index.html"
+      },
+      "source": [
+        "src/AllChallenge_frontend/assets",
+        "dist/AllChallenge_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.11.0",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
