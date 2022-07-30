@@ -18,7 +18,7 @@ actor{
     public func fun () : async Custom.student{
         return students;
     };
-    /* Create a new file called animal.mo with at least 2 property (specie of type Text, energy of type Nat), 
+    /* 2 : Create a new file called animal.mo with at least 2 property (specie of type Text, energy of type Nat), 
     import this type in your main.mo and create a variable that will store an animal.*/
     public type Animal = Animal.Animal;
 
