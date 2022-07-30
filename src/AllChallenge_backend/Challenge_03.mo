@@ -106,4 +106,27 @@ actor{
             assert (accepted == acceptable);
             return accepted;
     }
+    //*CHALLENGE 17
+  public func withdraw_cycles(amount : Nat) : async Nat {
+      Cycles.add(amount);
+      let n = await deposit_cycles();
+      return n;
+  };
+
+  //*CHALLENGE 18
+  stable var counter : Nat = 0;
+
+  public func increase_counter() : async () {
+    counter := counter + 1;
+  };
+
+  public func get_counter() : async Nat {
+    return counter;
+  };
+
+  public func clear_counter() : async () {
+    counter := 0;
+  };
+  //Challenge 20
+  //File Challenge20_day3
 }
